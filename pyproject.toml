@@ -1,19 +1,17 @@
-[project]
+[tool.poetry]
 name = "pubmed-paper-fetcher"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Shreya",email = "shettyshreyaj24@gmail.com"}
-]
+authors = ["Shreya <shettyshreyaj24@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "requests (>=2.32.3,<3.0.0)",
-    "pandas (>=2.2.3,<3.0.0)",
-    "python-dotenv (>=1.0.1,<2.0.0)"
-]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "<2.2"
+requests = "<2.31"
+python-dotenv = "<1.0"
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
